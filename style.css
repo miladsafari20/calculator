@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+   background-image: url(img/Untitled.png);
+    height: 100vh;
+    font-family: sans-serif;
+    background-size: 90%;
+    background-position:center ;
+    background-repeat: no-repeat;
+}
+.parent{
+    background-color: gainsboro;
+    width: 325px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    flex-direction: row-reverse;
+}
+li{
+    list-style: none;
+    width: 32px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    padding: 6px;
+}
+.icon-head{
+    width: 15px;
+    height: 15px;
+}
+.icon1:hover{
+    background-color: rgb(252, 42, 42);
+    width: 32px;
+    height: 18px;
+    padding: 6px;
+}
+.icon2:hover{
+    background-color: #bdc3c7;
+    width: 32px;
+    height: 18px;
+    padding: 6px;
+}
+h4{
+    font-size: 13px;
+    font-weight: 200;
+    padding:0 12px;
+    color: #434343;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+}
+.nav1{
+    display: flex;
+    align-items: center;
+}
+.text-standard{
+    margin: 0 0.8rem;
+    font-weight: 200
+}
+.icon-down{
+    width: 22px;
+    height: 22px;
+}
+.icon-menu{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-menu:hover{
+    background-color: #bdc3c7;
+    width: 40px;
+    height: 40px;
+}
+.nav2{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav2:hover{
+    width: 40px;
+    height: 40px;
+    background-color: #bdc3c7
+}
+.value{
+    padding: 1.5rem 0.7rem;
+}
+.value h2{
+    text-align: right;
+    font-size: 45px;
+    font-weight: 500;
+}
+.middle{
+    height: 61%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: 3px 3px;
+    margin-top: 1.3rem;
+}
+.operator{
+    background-color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+.operator:hover{
+background-color: #bdbdbd;
+cursor: default;
+}
+#icon-operator{
+    width: 28px;
+    height:28px;
+}
+.number{
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.number:hover{
+    background-color: #bdbdbd;
+    cursor: default;
+}
+@media  screen and (max-width:1200px) {
+    body{
+       background-image: none;
+    }
+}
+@media  screen and (max-width:500px) {
+    .parent{
+        width: 240px;
+        height: 430px;
+    }
+    .middle{
+        height: 55%;
+    }
+}
